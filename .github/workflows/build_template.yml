@@ -61,7 +61,6 @@ jobs:
       - name: "Run Build"
         shell: bash
         run: |
-          cd 'ci-cd-vite'
           pushd './ci-cd-vite${{ env.REPO_PATH }}'
           npm run build
 
