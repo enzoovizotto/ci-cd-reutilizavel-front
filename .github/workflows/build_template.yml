@@ -61,7 +61,8 @@ jobs:
       - name: "Run Build"
         shell: bash
         run: |
-          pushd './ci-cd-vite${{ env.REPO_PATH }}'
+          cd 'ci-cd-vite'
+          pushd '.${{ env.REPO_PATH }}'
           npm run build
 
       - name: "Zip build artifact"
